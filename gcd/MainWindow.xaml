@@ -1,0 +1,71 @@
+﻿<Window x:Class="gcd.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:gcd"
+        mc:Ignorable="d"
+        Title="gcd 1.0" Height="350" Width="525"
+        WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <Style TargetType="Label">
+            <Setter Property="Margin" Value="0,0,10,5"/>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="FontFamily" Value="monospace"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+            <Setter Property="Margin" Value="0,0,0,5"/>
+        </Style>
+    </Window.Resources>
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="130*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Column="0" Grid.Row="0">URL:</Label>
+        <TextBox Name="tbUrl"
+                 Grid.Column="1" Grid.Row="0"
+                 VerticalContentAlignment="Center"
+                 FontFamily="monospace" FontSize="14"
+                 ToolTip="Copy the url of project on Github"
+                 TextChanged="tbUrl_TextChanged"/>
+
+        <StackPanel Grid.Column="0" Grid.Row="1">
+            <Label>Command:</Label>
+            <TextBlock HorizontalAlignment="Center"
+                       ToolTip="Open CMD.exe and run this command" Margin="0,-5,0,0">
+                <Hyperlink Click="Cmd_Click">CMD</Hyperlink>
+            </TextBlock>
+        </StackPanel>
+        <TextBox Name="tbCmd"
+                 Grid.Column="1" Grid.Row="1"/>
+
+        <Label Grid.Column="0" Grid.Row="2">Output:</Label>
+        <TextBox Name="tbLog" 
+                 Grid.Column="1" Grid.Row="2"
+                 IsReadOnly="True"/>
+
+        <TextBlock Grid.Column="1" Grid.Row="3" 
+                   VerticalAlignment="Center" Margin="0,15,0,0">
+                <Hyperlink Click="About_Click">About</Hyperlink>
+        </TextBlock>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,15,0,0"
+                    Grid.Column="1" Grid.Row="3">
+            <Button Name="btnOk" 
+                    Padding="10,5"
+                    Click="btnOk_Click">Clone</Button>
+            <Button Name="btnStop" 
+                    Padding="10,5" Margin="10,0,0,0"
+                    Visibility="Hidden"
+                    Click="btnStop_Click">Stop</Button>
+        </StackPanel>
+    </Grid>
+</Window>
