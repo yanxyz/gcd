@@ -1,0 +1,11 @@
+﻿*.zip
+
+# Visual Studio
+*.suo
+*.user
+.vs/
+[Bb]in/
+[Oo]bj/
+[Ll]ib/
+packages/
+TestResults/

@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26020.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gcd", "gcd\gcd.csproj", "{72B0971C-268D-48B8-A5A3-34285A47B988}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gcdTest", "gcdTest\gcdTest.csproj", "{C39F4B1E-D117-420F-A88B-8742733B1179}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5C368691-1B3F-4B06-8D3B-264CC56959D6}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{72B0971C-268D-48B8-A5A3-34285A47B988}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72B0971C-268D-48B8-A5A3-34285A47B988}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72B0971C-268D-48B8-A5A3-34285A47B988}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72B0971C-268D-48B8-A5A3-34285A47B988}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C39F4B1E-D117-420F-A88B-8742733B1179}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C39F4B1E-D117-420F-A88B-8742733B1179}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C39F4B1E-D117-420F-A88B-8742733B1179}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C39F4B1E-D117-420F-A88B-8742733B1179}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

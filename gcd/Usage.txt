@@ -1,0 +1,10 @@
+﻿Usage: gcd [options] <url>
+
+Options:
+  -b, --branch     Specify branch/tag when it contains "/".
+  -c, --clone      Run clone command otherwise output the command.
+  -v, --version    Print Version. 
+  -h, --help       Print usage.
+
+Readme:
+  https://github.com/yanxyz/gcd#readme
